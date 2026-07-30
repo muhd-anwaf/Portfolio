@@ -1,4 +1,5 @@
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 import './globals.css';
 
 export default function RootLayout({ children }) {
@@ -7,6 +8,7 @@ export default function RootLayout({ children }) {
       <body className="bg-slate-900 text-slate-100">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
