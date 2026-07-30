@@ -38,7 +38,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="scroll-mt-20 px-6 py-20">
+    <section id="contact" className="scroll-mt-20 snap-start px-6 py-20">
       <div className="mx-auto max-w-5xl">
         <h2 className="text-3xl font-bold text-foreground">
           Get in touch

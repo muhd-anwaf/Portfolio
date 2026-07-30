@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section id="about" className="scroll-mt-20 px-6 py-20">
+    <section id="about" className="scroll-mt-20 snap-start px-6 py-20">
       <div className="mx-auto max-w-5xl">
         <h2 className="text-3xl font-bold text-foreground">About</h2>
 

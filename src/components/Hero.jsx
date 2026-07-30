@@ -3,7 +3,7 @@ import { ArrowDown, FileDown } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="mx-auto flex min-h-[calc(100vh-4rem)] max-w-5xl flex-col-reverse items-center gap-12 px-6 py-20 md:flex-row md:justify-between">
+    <section className="mx-auto flex min-h-[calc(100vh-4rem)] max-w-5xl snap-start flex-col-reverse items-center gap-12 px-6 py-20 md:flex-row md:justify-between">
       {/* Text column */}
       <div className="flex-1 text-center md:text-left">
         <p className="mb-3 text-sm font-medium tracking-wide text-cyan-600 dark:text-cyan-400">
