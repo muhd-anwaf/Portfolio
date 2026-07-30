@@ -40,11 +40,11 @@ export default function Contact() {
   return (
     <section id="contact" className="scroll-mt-20 px-6 py-20">
       <div className="mx-auto max-w-5xl">
-        <h2 className="text-3xl font-bold text-white">
+        <h2 className="text-3xl font-bold text-foreground">
           Get in touch
         </h2>
 
-        <p className="mt-3 max-w-lg text-slate-400">
+        <p className="mt-3 max-w-lg text-muted">
           I&apos;m looking for junior developer roles and open to
           freelance work. Drop me a message and I&apos;ll get back
           to you.
@@ -55,7 +55,7 @@ export default function Contact() {
             <div>
               <label
                 htmlFor="name"
-                className="block text-sm text-slate-300"
+                className="block text-sm text-muted-foreground"
               >
                 Name
               </label>
@@ -65,14 +65,14 @@ export default function Contact() {
                 name="name"
                 type="text"
                 required
-                className="mt-1.5 w-full rounded-md border border-slate-700 bg-slate-800/50 px-3 py-2 text-sm text-white outline-none focus:border-cyan-400"
+                className="mt-1.5 w-full rounded-md border border-border bg-card px-3 py-2 text-sm text-foreground outline-none focus:border-cyan-500 dark:focus:border-cyan-400"
               />
             </div>
 
             <div>
               <label
                 htmlFor="email"
-                className="block text-sm text-slate-300"
+                className="block text-sm text-muted-foreground"
               >
                 Email
               </label>
@@ -82,14 +82,14 @@ export default function Contact() {
                 name="email"
                 type="email"
                 required
-                className="mt-1.5 w-full rounded-md border border-slate-700 bg-slate-800/50 px-3 py-2 text-sm text-white outline-none focus:border-cyan-400"
+                className="mt-1.5 w-full rounded-md border border-border bg-card px-3 py-2 text-sm text-foreground outline-none focus:border-cyan-500 dark:focus:border-cyan-400"
               />
             </div>
 
             <div>
               <label
                 htmlFor="message"
-                className="block text-sm text-slate-300"
+                className="block text-sm text-muted-foreground"
               >
                 Message
               </label>
@@ -99,7 +99,7 @@ export default function Contact() {
                 name="message"
                 rows={5}
                 required
-                className="mt-1.5 w-full resize-none rounded-md border border-slate-700 bg-slate-800/50 px-3 py-2 text-sm text-white outline-none focus:border-cyan-400"
+                className="mt-1.5 w-full resize-none rounded-md border border-border bg-card px-3 py-2 text-sm text-foreground outline-none focus:border-cyan-500 dark:focus:border-cyan-400"
               />
             </div>
 
@@ -131,13 +131,13 @@ export default function Contact() {
           </form>
 
           <div className="space-y-4">
-            <p className="text-sm text-slate-400">
+            <p className="text-sm text-muted">
               Or find me here:
             </p>
 
             <a
               href="mailto:you@example.com"
-              className="flex items-center gap-3 text-slate-300 transition-colors hover:text-cyan-400"
+              className="flex items-center gap-3 text-muted-foreground transition-colors hover:text-cyan-600 dark:hover:text-cyan-400"
             >
               <Mail size={18} />
               you@example.com
@@ -147,7 +147,7 @@ export default function Contact() {
               href="https://github.com/yourusername"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 text-slate-300 transition-colors hover:text-cyan-400"
+              className="flex items-center gap-3 text-muted-foreground transition-colors hover:text-cyan-600 dark:hover:text-cyan-400"
             >
               <Code2 size={18} />
               github.com/yourusername
@@ -157,7 +157,7 @@ export default function Contact() {
               href="https://linkedin.com/in/yourusername"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 text-slate-300 transition-colors hover:text-cyan-400"
+              className="flex items-center gap-3 text-muted-foreground transition-colors hover:text-cyan-600 dark:hover:text-cyan-400"
             >
               <ExternalLink size={18} />
               linkedin.com/in/yourusername

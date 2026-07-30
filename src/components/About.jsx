@@ -2,9 +2,9 @@ export default function About() {
   return (
     <section id="about" className="scroll-mt-20 px-6 py-20">
       <div className="mx-auto max-w-5xl">
-        <h2 className="text-3xl font-bold text-white">About</h2>
+        <h2 className="text-3xl font-bold text-foreground">About</h2>
 
-        <div className="mt-8 max-w-2xl space-y-4 text-slate-400 leading-relaxed">
+        <div className="mt-8 max-w-2xl space-y-4 leading-relaxed text-muted">
           <p>
             I&apos;m a frontend developer based in Kerala. I started out
             curious about how the websites I used every day were actually put
@@ -16,7 +16,7 @@ export default function About() {
             people don&apos;t notice — pages that load fast, layouts that
             don&apos;t break on a phone, forms that tell you what went wrong.
             Right now I&apos;m learning{' '}
-            <span className="text-cyan-400">TypeScript</span> and getting more
+            <span className="text-cyan-600 dark:text-cyan-400">TypeScript</span> and getting more
             comfortable with backend work.
           </p>
 
