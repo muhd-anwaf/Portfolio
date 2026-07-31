@@ -18,25 +18,25 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-md">
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-<Link
-  href="/"
-  className="flex items-center gap-3"
-  aria-label="Go to homepage"
->
-  <Image
-    src="/logo.png"
-    alt="Muhammed Anwaf logo"
-    width={44}
-    height={44}
-    className="h-11 w-11 object-contain"
-    priority
-  />
+        <Link
+        href="/"
+        className="flex items-center gap-3"
+        aria-label="Go to homepage"
+        >
+        <Image
+            src="/logo.png"
+            alt="Muhammed Anwaf logo"
+            width={44}
+            height={44}
+            className="h-11 w-11 object-contain"
+            priority
+        />
 
-  <span className="hidden text-xl font-bold text-slate-900 dark:text-white sm:block">
-    Muhammed Anwaf
-    <span className="text-cyan-600 dark:text-cyan-400">.</span>
-  </span>
-</Link>
+        <span className="hidden text-xl font-bold text-slate-900 dark:text-white sm:block">
+            Muhammed Anwaf
+            <span className="text-cyan-600 dark:text-cyan-400">.</span>
+        </span>
+        </Link>
 
         <div className="flex items-center gap-6">
           <ul className="hidden gap-8 md:flex">
