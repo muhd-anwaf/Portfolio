@@ -1,10 +1,5 @@
+import ANLogo from './ANLogo';
+
 export default function Footer() {
-  return (
-    <footer className="border-t border-border px-6 py-8">
-      <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-3 text-sm text-muted sm:flex-row">
-        <p>© {new Date().getFullYear()} Your Name</p>
-        <p>Built with Next.js and Tailwind CSS</p>
-      </div>
-    </footer>
-  );
+  return <footer className="footer"><div className="site-container"><div className="footer-brand"><ANLogo /><span>ANWAF</span></div><p>© {new Date().getFullYear()} Muhammed Anwaf</p><p>Design → Develop → Deploy</p></div></footer>;
 }

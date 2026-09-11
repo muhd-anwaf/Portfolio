@@ -1,31 +1,3 @@
 export default function About() {
-  return (
-    <section id="about" className="scroll-mt-20 snap-start px-6 py-20">
-      <div className="mx-auto max-w-5xl">
-        <h2 className="text-3xl font-bold text-foreground">About</h2>
-
-        <div className="mt-8 max-w-2xl space-y-4 leading-relaxed text-muted">
-          <p>
-            I&apos;m a frontend developer based in Kerala. I started out
-            curious about how the websites I used every day were actually put
-            together, and that curiosity turned into building my own.
-          </p>
-
-          <p>
-            Most of my work is in React and Next.js. I care about the parts
-            people don&apos;t notice — pages that load fast, layouts that
-            don&apos;t break on a phone, forms that tell you what went wrong.
-            Right now I&apos;m learning{' '}
-            <span className="text-cyan-600 dark:text-cyan-400">TypeScript</span> and getting more
-            comfortable with backend work.
-          </p>
-
-          <p>
-            When I&apos;m not coding, I&apos;m usually reading or out with a
-            camera.
-          </p>
-        </div>
-      </div>
-    </section>
-  );
+  return <section id="about" className="about-section" aria-labelledby="about-heading"><div className="site-container about-layout"><div><p className="terminal-label">&gt; about</p><h2 id="about-heading">Backend engineering is the focus. <em>Full-stack context is the advantage.</em></h2></div><div className="about-copy"><p>I am a software developer focused on backend engineering and building reliable web systems. I enjoy working across the software lifecycle—from designing APIs and data models to developing applications and deploying services.</p><p>My project work combines Java and Spring Boot services with database management, REST APIs, retrieval-augmented applications, and modern web interfaces. I use full-stack understanding to make backend decisions that work well for the product as a whole.</p><p className="about-availability"><span className="status-dot" /> Available for Backend Engineering opportunities across India.</p></div></div></section>;
 }
