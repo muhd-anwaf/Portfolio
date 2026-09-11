@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { ArrowDownRight, ArrowUpRight, Code2, FileDown, Mail } from 'lucide-react';
 
 const profileData = [
@@ -27,13 +28,26 @@ export default function Hero() {
             <span><Code2 size={14} aria-hidden="true" /> /backend</span>
           </div>
         </div>
-        <aside className="profile-panel enter enter-5" aria-label="Professional profile metadata">
-          <div className="panel-heading"><span>profile.status</span><i /></div>
-          <dl>
-            {profileData.map(([term, detail]) => <div key={term}><dt>{term}</dt><dd>{detail}</dd></div>)}
-          </dl>
-          <p className="panel-command">$ build --focus=backend</p>
-        </aside>
+        <div className="hero-aside enter enter-5">
+          <div className="hero-photo-frame">
+            <Image
+              src="/profile.jpg"
+              alt="Muhammed Anwaf"
+              width={720}
+              height={720}
+              priority
+              sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 900px) min(500px, calc(100vw - 48px)), 360px"
+              className="hero-photo"
+            />
+          </div>
+          <aside className="profile-panel" aria-label="Professional profile metadata">
+            <div className="panel-heading"><span>profile.status</span><i /></div>
+            <dl>
+              {profileData.map(([term, detail]) => <div key={term}><dt>{term}</dt><dd>{detail}</dd></div>)}
+            </dl>
+            <p className="panel-command">$ build --focus=backend</p>
+          </aside>
+        </div>
       </div>
     </section>
   );

@@ -1,3 +1,4 @@
+import CursorSpotlight from '@/components/CursorSpotlight';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import ScrollProgress from '@/components/ScrollProgress';
@@ -16,5 +17,5 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  return <html lang="en" className="scroll-smooth"><body><ScrollProgress /><a href="#main-content" className="skip-link">Skip to content</a><Navbar />{children}<Footer /></body></html>;
+  return <html lang="en" className="scroll-smooth"><body><ScrollProgress /><CursorSpotlight /><div className="site-content"><a href="#main-content" className="skip-link">Skip to content</a><Navbar />{children}<Footer /></div></body></html>;
 }
