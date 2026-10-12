@@ -24,7 +24,7 @@ export default function Hero() {
           </div>
           <div className="hero-links enter enter-4" aria-label="Professional links">
             <a href="https://github.com/muhd-anwaf" target="_blank" rel="noreferrer">GitHub <ArrowUpRight size={14} aria-hidden="true" /></a>
-            <a href="/resume.pdf" target="_blank" rel="noreferrer">Resume <FileDown size={14} aria-hidden="true" /></a>
+            <a href="https://drive.google.com/file/d/1SIOaf0pr3AVdFYk-XZbmXjWgsL5w5M84/view?usp=sharing" target="_blank" rel="noreferrer">Resume <FileDown size={14} aria-hidden="true" /></a>
             <span><Code2 size={14} aria-hidden="true" /> /backend</span>
           </div>
         </div>
