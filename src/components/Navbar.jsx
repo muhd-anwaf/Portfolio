@@ -33,12 +33,12 @@ export default function Navbar() {
         <Link href="/" className="brand" aria-label="Muhammed Anwaf home"><span className="brand-mark"><ANLogo /></span><span className="brand-name">ANWAF<span>.</span></span></Link>
         <div className="nav-desktop">
           <ul>{navLinks.map((link, index) => <li key={link.name}><a href={link.href} className={activeSection === link.href ? 'active' : ''}><span>0{index + 1}</span>{link.name}</a></li>)}</ul>
-          <a href="/resume.pdf" target="_blank" rel="noreferrer" className="resume-link">Resume ↗</a>
+          <a href="https://drive.google.com/file/d/1SIOaf0pr3AVdFYk-XZbmXjWgsL5w5M84/view?usp=sharing" target="_blank" rel="noreferrer" className="resume-link">Resume ↗</a>
         </div>
         <button className="menu-toggle" type="button" onClick={() => setIsOpen(!isOpen)} aria-expanded={isOpen} aria-controls="mobile-navigation" aria-label={isOpen ? 'Close navigation' : 'Open navigation'}>{isOpen ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}</button>
       </nav>
       <div id="mobile-navigation" className={`mobile-menu ${isOpen ? 'mobile-menu-open' : ''}`} aria-hidden={!isOpen}>
-        <div className="site-container"><p>navigate.to</p>{navLinks.map((link, index) => <a key={link.name} href={link.href} onClick={closeMenu}><span>0{index + 1}</span>{link.name}</a>)}<a href="/resume.pdf" target="_blank" rel="noreferrer" onClick={closeMenu} className="mobile-resume">Resume ↗</a></div>
+        <div className="site-container"><p>navigate.to</p>{navLinks.map((link, index) => <a key={link.name} href={link.href} onClick={closeMenu}><span>0{index + 1}</span>{link.name}</a>)}<a href="https://drive.google.com/file/d/1SIOaf0pr3AVdFYk-XZbmXjWgsL5w5M84/view?usp=sharing" target="_blank" rel="noreferrer" onClick={closeMenu} className="mobile-resume">Resume ↗</a></div>
       </div>
     </header>
   );
